@@ -138,6 +138,8 @@ h1, h2, h3, h4, h5 {
 .btn-primary:hover {
     background-color: transparent;
     color: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
 }
 
 .btn-secondary {
@@ -146,9 +148,17 @@ h1, h2, h3, h4, h5 {
     border: 2px solid var(--primary-color);
 }
 
+@keyframes slow-pulse {
+    0% { box-shadow: 0 0 0 0 rgba(49, 130, 206, 0.4); }
+    70% { box-shadow: 0 0 0 10px rgba(49, 130, 206, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(49, 130, 206, 0); }
+}
+
 .btn-secondary:hover {
     background-color: var(--primary-color);
     color: var(--white);
+    transform: translateY(-2px);
+    animation: slow-pulse 1.5s infinite;
 }
 
 .btn-outline {
@@ -245,11 +255,21 @@ header.scrolled {
 /* =========================================
    SECTION 1: HERO (Accueil)
    ========================================= */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     padding-top: 70px; /* Offset for fixed header */
+    background: linear-gradient(-45deg, #ffffff, #e6f0fa, #f0f4f8, #eef2f6);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    position: relative;
 }
 
 .hero-container {
@@ -371,6 +391,12 @@ header.scrolled {
     background-color: var(--white);
     border: 3px solid var(--accent-color);
     z-index: 1;
+    transition: all var(--transition-fast);
+}
+
+.timeline-item:hover::before {
+    background-color: var(--accent-color);
+    box-shadow: 0 0 10px var(--accent-color);
 }
 
 .timeline-date {
@@ -446,6 +472,14 @@ header.scrolled {
     border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 500;
+    transition: transform var(--transition-fast), background-color var(--transition-fast), color var(--transition-fast);
+    cursor: default;
+}
+
+.tag:hover {
+    transform: scale(1.08);
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 
 .bts-ref-box {
@@ -494,6 +528,12 @@ header.scrolled {
     overflow: hidden;
     box-shadow: var(--shadow-md);
     margin-bottom: 3rem;
+    transition: transform var(--transition-fast), box-shadow var(--transition-slow);
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
 }
 
 .project-card:nth-child(even) {

@@ -47,14 +47,13 @@
                     concevoir des solutions adaptées, sécurisées et performantes.</p>
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-                    <a href="documents/CV_TAKPA_Dalilath_2026.pdf" target="_blank" class="btn btn-secondary"><i
+                    <a href="documents/CV_Dalilath_TAKPA.pdf" target="_blank" class="btn btn-secondary"><i
                             class="fas fa-download"></i> Télécharger mon CV</a>
                 </div>
             </div>
             <div class="hero-image reveal">
                 <!-- User photo goes here -->
-                <div class="profile-img-placeholder">
-                    <i class="fas fa-user-graduate"></i>
+                <div class="profile-img-placeholder" style="background-image: url('images/profile.jpeg'); background-size: cover; background-position: center; border: 8px solid var(--white); box-shadow: var(--shadow-lg);">
                 </div>
             </div>
         </div>
@@ -186,6 +185,27 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Certifications -->
+            <div class="bts-ref-box reveal" style="margin-top: 2rem;">
+                <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                <div class="bts-skills">
+                    <div class="bts-skill" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div>
+                            <h4>SecNumacadémie (ANSSI)</h4>
+                            <p>Attestation de suivi avec succès du MOOC de l'ANSSI sur la sécurité de l'information.</p>
+                        </div>
+                        <a href="documents/SecNumacadémie.pdf" target="_blank" class="btn btn-secondary" style="align-self: flex-start;"><i class="fas fa-file-pdf"></i> Consulter l'attestation</a>
+                    </div>
+                    <div class="bts-skill" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div>
+                            <h4>Formation Cisco (Networking Academy)</h4>
+                            <p>Attestation de réussite relative aux modules de formation sur les technologies réseaux et la cybersécurité avec Cisco.</p>
+                        </div>
+                        <a href="documents/Certif_Cisco.pdf" target="_blank" class="btn btn-secondary" style="align-self: flex-start;"><i class="fas fa-file-pdf"></i> Consulter l'attestation</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -197,82 +217,201 @@
                 <div class="underline"></div>
             </div>
 
-            <!-- Project 1 -->
-            <div class="project-card reveal">
-                <div class="project-content">
-                    <h3>Application de Gestion de Bibliothèque (GSB)</h3>
-                    <div class="project-meta">
-                        <span class="project-type"><i class="fas fa-building"></i> Projet Scolaire</span>
-                        <span class="project-date"><i class="fas fa-calendar-alt"></i> 2023</span>
-                    </div>
-
-                    <div class="project-details">
-                        <div class="detail-box">
-                            <h4>Contexte & Problématique</h4>
-                            <p>Le laboratoire GSB a besoin d'une application interne pour gérer les frais de déplacement
-                                de ses visiteurs médicaux. Le processus actuel est manuel et source d'erreurs.</p>
+            <div class="project-list" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                
+                <!-- Project 1 -->
+                <div class="project-card reveal" style="flex-direction: column; margin-bottom: 0;">
+                    <div style="height: 180px; background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);"></div>
+                    <div class="project-content" style="width: 100%;">
+                        <h3>Mise en place de services réseaux d'infrastructure (DHCP et DNS)</h3>
+                        <div class="project-meta">
+                            <span class="project-type"><i class="fas fa-network-wired"></i> Projet Réseau</span>
+                            <span class="project-date"><i class="fas fa-calendar-alt"></i> 2024-2025</span>
                         </div>
-                        <div class="detail-box">
-                            <h4>Solutions Techniques</h4>
-                            <p>Développement d'une application web avec PHP/PDO selon une architecture MVC. Mise en
-                                place d'une base de données relationnelle sécurisée pour centraliser les données.</p>
-                        </div>
-                    </div>
-
-                    <div class="project-footer">
-                        <div class="project-tech">
-                            <span class="tag">PHP</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">HTML/CSS</span>
-                            <span class="tag">Architecture MVC</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline" title="Voir sur GitHub"><i class="fab fa-github"></i>
-                                Code Source</a>
-                            <button class="btn btn-primary"
-                                onclick="alert('Ouvre une modale avec plus de détails (captures, compétences du référentiel mobilisées, etc.)')">Détails
-                                Épreuve E5</button>
+                        <div class="project-footer" style="padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: auto;">
+                            <div class="project-tech">
+                                <span class="tag">Windows Server / Linux</span>
+                                <span class="tag">DHCP</span>
+                                <span class="tag">DNS</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project-image">
-                    <!-- Placeholder pour capture d'écran -->
-                    <div class="img-placeholder">Capture d'écran de l'application</div>
-                </div>
-            </div>
 
-            <!-- Project 2 (Example of another project) -->
-            <div class="project-card reveal">
-                <div class="project-image">
-                    <div class="img-placeholder">Capture d'écran Client Lourd / Mobile</div>
-                </div>
-                <div class="project-content">
-                    <h3>Client Lourd - Application de facturation</h3>
-                    <div class="project-meta">
-                        <span class="project-type"><i class="fas fa-laptop-code"></i> Projet Personnel</span>
-                        <span class="project-date"><i class="fas fa-calendar-alt"></i> 2024</span>
-                    </div>
-
-                    <div class="project-details">
-                        <div class="detail-box">
-                            <h4>Analyse du besoin</h4>
-                            <p>Création d'un outil de bureau pour permettre à une PME de générer des factures au format
-                                PDF et de gérer son catalogue de produits sans dépendre du cloud.</p>
+                <!-- Project 2 -->
+                <div class="project-card reveal" style="flex-direction: column; margin-bottom: 0;">
+                    <div style="height: 180px; background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);"></div>
+                    <div class="project-content" style="width: 100%;">
+                        <h3>Audit de sécurité applicative : Injection SQL (TP Labtainer)</h3>
+                        <div class="project-meta">
+                            <span class="project-type"><i class="fas fa-shield-alt"></i> Cybersécurité</span>
+                            <span class="project-date"><i class="fas fa-calendar-alt"></i> 2024-2025</span>
                         </div>
-                    </div>
-
-                    <div class="project-footer">
-                        <div class="project-tech">
-                            <span class="tag">C#</span>
-                            <span class="tag">WPF</span>
-                            <span class="tag">SQLite</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="btn btn-outline"><i class="fab fa-github"></i> Code Source</a>
-                            <button class="btn btn-primary" onclick="alert('Détails')">Détails Épreuve E5</button>
+                        <div class="project-footer" style="padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: auto;">
+                            <div class="project-tech">
+                                <span class="tag">Labtainer</span>
+                                <span class="tag">SQL Injection</span>
+                                <span class="tag">Sécurité</span>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal" style="flex-direction: column; margin-bottom: 0;">
+                    <div style="height: 180px; background: linear-gradient(135deg, #3a7bd5 0%, #3a6073 100%);"></div>
+                    <div class="project-content" style="width: 100%;">
+                        <h3>Plateforme de QCM interactif avec statistiques</h3>
+                        <div class="project-meta">
+                            <span class="project-type"><i class="fas fa-code"></i> Projet Web</span>
+                            <span class="project-date"><i class="fas fa-calendar-alt"></i> 2024-2025</span>
+                        </div>
+                        <div class="project-footer" style="padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: auto;">
+                            <div class="project-tech">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card reveal" style="flex-direction: column; margin-bottom: 0;">
+                    <div style="height: 180px; background: linear-gradient(135deg, #283048 0%, #859398 100%);"></div>
+                    <div class="project-content" style="width: 100%;">
+                        <h3>Gestion des demandes et incidents, outil TRAC (TP BlueTeam)</h3>
+                        <div class="project-meta">
+                            <span class="project-type"><i class="fas fa-tasks"></i> Support & Incident</span>
+                            <span class="project-date"><i class="fas fa-calendar-alt"></i> 2024-2025</span>
+                        </div>
+                        <div class="project-footer" style="padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: auto;">
+                            <div class="project-tech">
+                                <span class="tag">TRAC</span>
+                                <span class="tag">Ticketing</span>
+                                <span class="tag">BlueTeam</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card reveal" style="flex-direction: column; margin-bottom: 0;">
+                    <div style="height: 180px; background: linear-gradient(135deg, #141e30 0%, #243b55 100%);"></div>
+                    <div class="project-content" style="width: 100%;">
+                        <h3>Portfolio Professionnel et Veille Technologique</h3>
+                        <div class="project-meta">
+                            <span class="project-type"><i class="fas fa-briefcase"></i> Projet Pro</span>
+                            <span class="project-date"><i class="fas fa-calendar-alt"></i> 2024-2026</span>
+                        </div>
+                        <div class="project-footer" style="padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: auto;">
+                            <div class="project-tech">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Git</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card reveal" style="flex-direction: column; margin-bottom: 0;">
+                    <div style="height: 180px; background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);"></div>
+                    <div class="project-content" style="width: 100%;">
+                        <h3>Réseau social "Game Connect" avec Chat évolutif</h3>
+                        <div class="project-meta">
+                            <span class="project-type"><i class="fas fa-users"></i> Projet Applicatif</span>
+                            <span class="project-date"><i class="fas fa-calendar-alt"></i> 2025</span>
+                        </div>
+                        <div class="project-footer" style="padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: auto;">
+                            <div class="project-tech">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">AJAX / JS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 -->
+                <div class="project-card reveal" style="flex-direction: column; margin-bottom: 0;">
+                    <div style="height: 180px; background: linear-gradient(135deg, #0052D4 0%, #4364F7 50%, #6FB1FC 100%);"></div>
+                    <div class="project-content" style="width: 100%;">
+                        <h3>Module de Chat type Forum</h3>
+                        <div class="project-meta">
+                            <span class="project-type"><i class="fas fa-comments"></i> Projet Applicatif</span>
+                            <span class="project-date"><i class="fas fa-calendar-alt"></i> 2024-2025</span>
+                        </div>
+                        <div class="project-footer" style="padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: auto;">
+                            <div class="project-tech">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">HTML/CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project-card reveal" style="flex-direction: column; margin-bottom: 0;">
+                    <div style="height: 180px; background: linear-gradient(135deg, #373B44 0%, #4286f4 100%);"></div>
+                    <div class="project-content" style="width: 100%;">
+                        <h3>Application web de petites annonces ("leboncoin")</h3>
+                        <div class="project-meta">
+                            <span class="project-type"><i class="fas fa-globe"></i> Projet Web</span>
+                            <span class="project-date"><i class="fas fa-calendar-alt"></i> 2024-2025</span>
+                        </div>
+                        <div class="project-footer" style="padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                            <div class="project-tech">
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Architecture MVC</span>
+                            </div>
+                            <a href="https://github.com/Dalilath/Lebonbazaar" target="_blank" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;"><i class="fab fa-github"></i> Code Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project-card reveal" style="flex-direction: column; margin-bottom: 0;">
+                    <div style="height: 180px; background: linear-gradient(135deg, #24243e 0%, #302b63 50%, #0f0c29 100%);"></div>
+                    <div class="project-content" style="width: 100%;">
+                        <h3>Application WinForms Gestion de Parc Informatique</h3>
+                        <div class="project-meta">
+                            <span class="project-type"><i class="fas fa-desktop"></i> Client Lourd</span>
+                            <span class="project-date"><i class="fas fa-calendar-alt"></i> 2025-2026</span>
+                        </div>
+                        <div class="project-footer" style="padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                            <div class="project-tech">
+                                <span class="tag">C#</span>
+                                <span class="tag">WinForms</span>
+                                <span class="tag">SQL Server</span>
+                            </div>
+                            <a href="https://github.com/Dalilath/windowsForms.git" target="_blank" class="btn btn-secondary" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;"><i class="fab fa-github"></i> Code Source</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10 -->
+                <div class="project-card reveal" style="flex-direction: column; margin-bottom: 0;">
+                    <div style="height: 180px; background: linear-gradient(135deg, #000428 0%, #004e92 100%);"></div>
+                    <div class="project-content" style="width: 100%;">
+                        <h3>Configuration de VLAN pour séparer les réseaux</h3>
+                        <div class="project-meta">
+                            <span class="project-type"><i class="fas fa-network-wired"></i> Projet Réseau</span>
+                            <span class="project-date"><i class="fas fa-calendar-alt"></i> 2024-2025</span>
+                        </div>
+                        <div class="project-footer" style="padding-top: 1rem; border-top: 1px solid var(--border-color); margin-top: auto;">
+                            <div class="project-tech">
+                                <span class="tag">Cisco IOS</span>
+                                <span class="tag">Packet Tracer</span>
+                                <span class="tag">VLAN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
         </div>
@@ -292,29 +431,64 @@
                         <i class="fas fa-briefcase"></i>
                     </div>
                     <div class="exp-info">
-                        <h3>Développeur Web - Stage de 2ème année</h3>
-                        <h4>Agence Web DigitalX - Paris</h4>
-                        <span class="exp-date">Janvier 2024 - Février 2024 (6 semaines)</span>
+                        <h3>Technicien informatique - Stage 1ère année</h3>
+                        <h4>Service informatique Mairie d'Aubervilliers</h4>
+                        <span class="exp-date">Juin 2025</span>
+                    </div>
+                </div>
+                <div class="exp-body">
+                    <h4>Développement web :</h4>
+                    <ul>
+                        <li>Création d’un site interne pour la gestion complète de la flotte mobile.</li>
+                        <li>Suivi des attributions et de l’historique du matériel.</li>
+                    </ul>
+                    <h4>Support & maintenance :</h4>
+                    <ul>
+                        <li>Préparation de postes informatiques.</li>
+                        <li>Assistance utilisateurs et configurations des PC.</li>
+                    </ul>
+                    <h4>Réseau & infrastructure :</h4>
+                    <ul>
+                        <li>Observation des équipements de la salle réseau.</li>
+                        <li>Participation à la maintenance du réseau local.</li>
+                        <li>Découverte du rôle d’Active Directory.</li>
+                    </ul>
+                </div>
+                <div class="exp-footer">
+                    <div class="skill-tags">
+                        <span class="tag">Support Utilisateur</span>
+                        <span class="tag">Réseau Local</span>
+                        <span class="tag">Active Directory</span>
+                        <span class="tag">Développement Web Interne</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="experience-card reveal mt-2">
+                <div class="exp-header">
+                    <div class="exp-company-logo">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="exp-info">
+                        <h3>Développeur Web - Stage 2ème année</h3>
+                        <h4>Auto-école (Conception et déploiement)</h4>
+                        <span class="exp-date">2025 - 2026</span>
                     </div>
                 </div>
                 <div class="exp-body">
                     <h4>Missions réalisées :</h4>
                     <ul>
-                        <li>Développement de modules spécifiques pour un CMS e-commerce.</li>
-                        <li>Intégration de maquettes Figma en HTML/CSS/JS responsive.</li>
-                        <li>Correction de bugs (mantis, ticket) et optimisation des requêtes SQL.</li>
+                        <li>Élaboration du cahier des charges et création de maquettes.</li>
+                        <li>Développement des fonctionnalités et intégration du code source en HTML/PHP.</li>
+                        <li>Mise en production et déploiement du site internet.</li>
                     </ul>
-                    <h4>Apports professionnels :</h4>
-                    <p>Ce stage m'a permis de me familiariser avec le travail en équipe (méthode Agile Scrum),
-                        l'utilisation d'outils de versionning en milieu professionnel (GitLab), et d'améliorer ma
-                        rigueur dans l'écriture de code propre et documenté.</p>
                 </div>
                 <div class="exp-footer">
                     <div class="skill-tags">
-                        <span class="tag">Travail en équipe</span>
-                        <span class="tag">Git</span>
-                        <span class="tag">PHP/Symfony</span>
-                        <span class="tag">Intégration Web</span>
+                        <span class="tag">HTML/CSS/PHP</span>
+                        <span class="tag">Maquettage</span>
+                        <span class="tag">Gestion de Projet</span>
+                        <span class="tag">Déploiement</span>
                     </div>
                 </div>
             </div>
@@ -331,50 +505,196 @@
 
             <div class="veille-container reveal">
                 <div class="veille-topic">
-                    <div class="veille-badge">Sujet Principal</div>
-                    <h3>L'Intelligence Artificielle dans le développement de logiciels (Copilot, ChatGPT)</h3>
-                    <p class="veille-summary">Comment les outils basés sur l'IA transforment le quotidien des
-                        développeurs : assistance à la saisie, génération de code, revue automatisée et impact sur la
-                        productivité et la sécurité.</p>
-                </div>
-
-                <div class="veille-methodology">
-                    <div class="method-box">
-                        <i class="fas fa-rss"></i>
-                        <h4>Outils utilisés</h4>
-                        <p>Feedly (Agrégateur RSS), Google Alerts, Twitter (Listes Tech), Newsletters spécialisées.</p>
-                    </div>
-                    <div class="method-box">
-                        <i class="fas fa-search"></i>
-                        <h4>Sources principales</h4>
-                        <p>Developpez.com, Le Monde Informatique, Blogs Engineering (Microsoft, GitHub), Medium.</p>
+                    <div class="veille-badge">Note de Synthèse</div>
+                    <h3>Authentification JWT & Supervision Zabbix</h3>
+                    <p class="veille-summary">Veille technologique sur la sécurisation des accès dans les architectures modernes (APIs, microservices) via une approche stateless et par jetons.</p>
+                    <div class="project-meta" style="justify-content: center; margin-top: 1rem; border-bottom: none; padding-bottom: 0;">
+                        <span class="project-type" style="margin-right: 1.5rem;"><i class="fas fa-calendar-alt"></i> 20 Mars 2026</span>
+                        <span class="project-type"><i class="fas fa-layer-group"></i> Niveau Intermédiaire / Avancé</span>
                     </div>
                 </div>
 
-                <div class="veille-articles">
-                    <h4>Articles Récents</h4>
-                    <a href="#" class="article-card">
-                        <div class="article-icon"><i class="fas fa-newspaper"></i></div>
-                        <div class="article-content">
-                            <h5>L'impact de GitHub Copilot sur la productivité</h5>
-                            <span>Publié le 12 Février 2024 - Source : Blog Engineering</span>
+                <div class="veille-methodology" style="grid-template-columns: 1fr; margin-bottom: 3rem;">
+                    <div class="method-box" style="text-align: left; align-items: flex-start; width: 100%;">
+                        <h4 style="color: var(--primary-color); font-size: 1.5rem; margin-bottom: 1rem;"><i class="fas fa-crosshairs"></i> 1. Contexte et enjeux</h4>
+                        <p style="color: var(--text-light); font-size: 1.05rem; margin-bottom: 1rem;">Avec la multiplication des APIs, des microservices et des applications web, la sécurisation des accès est devenue critique.</p>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; width: 100%;">
+                            <div style="background: rgba(230, 240, 250, 0.5); padding: 1rem; border-radius: 8px;">
+                                <h5 style="color: #e53e3e; margin-bottom: 0.5rem;"><i class="fas fa-times-circle"></i> Systèmes classiques (Sessions)</h5>
+                                <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;">
+                                    <li>👉 Difficiles à scaler</li>
+                                    <li>👉 Nécessitent du stockage côté serveur</li>
+                                </ul>
+                            </div>
+                            <div style="background: rgba(230, 250, 240, 0.5); padding: 1rem; border-radius: 8px;">
+                                <h5 style="color: #38a169; margin-bottom: 0.5rem;"><i class="fas fa-check-circle"></i> Les JSON Web Tokens (JWT)</h5>
+                                <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0;">
+                                    <li>👉 Permettent une authentification stateless</li>
+                                    <li>👉 Améliorent la scalabilité</li>
+                                    <li>👉 Intégration facile avec les architectures modernes</li>
+                                </ul>
+                            </div>
                         </div>
-                        <i class="fas fa-arrow-right article-arrow"></i>
-                    </a>
-                    <a href="#" class="article-card">
-                        <div class="article-icon"><i class="fas fa-newspaper"></i></div>
-                        <div class="article-content">
-                            <h5>Sécurité du code généré par l'IA : les nouveaux défis</h5>
-                            <span>Publié le 05 Janvier 2024 - Source : ANSSI / Sécurité Informatique</span>
-                        </div>
-                        <i class="fas fa-arrow-right article-arrow"></i>
-                    </a>
+                        <p style="margin-top: 1rem; font-weight: bold; color: var(--primary-color);">🎯 Objectif final : Garantir que seuls les utilisateurs authentifiés accèdent aux ressources.</p>
+                    </div>
                 </div>
 
-                <div class="text-center mt-2">
-                    <button class="btn btn-primary"
-                        onclick="alert('Ouvre une synthèse détaillée au format PDF ou une vue complète')">Voir ma
-                        synthèse complète</button>
+                <div class="veille-methodology" style="grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));">
+                    <div class="method-box" style="text-align: left; align-items: flex-start;">
+                        <h4 style="color: var(--primary-color);"><i class="fas fa-lock"></i> 2.1 Authentification JWT</h4>
+                        <ul style="list-style-type: disc; margin-left: 1.5rem; color: var(--text-light); text-align: left;">
+                            <li>Composé de 3 parties : Header, Payload (userId, rôle…), Signature (sécurité).</li>
+                            <li>Fonctionnement : 1. Login > 2. Génération du token > 3. Envoi au client > 4. Vérification à chaque requête.</li>
+                        </ul>
+                    </div>
+                    <div class="method-box" style="text-align: left; align-items: flex-start;">
+                        <h4 style="color: var(--primary-color);"><i class="fas fa-server"></i> 2.2 Authentification Stateless</h4>
+                        <p style="color: var(--text-light); margin-bottom: 0.5rem;">Côté serveur : aucune session n'est stockée, tout est dans le token et chaque requête est autonome.</p>
+                        <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0; color: var(--text-light); text-align: left;">
+                            <li>✔️ <strong>Avantages :</strong> Scalable, très rapide.</li>
+                            <li>❌ <strong>Inconvénient :</strong> Plus difficile à invalider prématurément.</li>
+                        </ul>
+                    </div>
+                    <div class="method-box" style="text-align: left; align-items: flex-start;">
+                        <h4 style="color: var(--primary-color);"><i class="fas fa-sync-alt"></i> 2.3 Refresh Tokens</h4>
+                        <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0; color: var(--text-light); text-align: left;">
+                            <li>👉 <strong>Problème :</strong> Un JWT ne doit pas durer longtemps.</li>
+                            <li>👉 <strong>Solution :</strong> Un <em>Access Token</em> (court) couplé à un <em>Refresh Token</em> (long).</li>
+                            <li>👉 <strong>Gain :</strong> Permet de rester connecté sans compromettre la sécurité.</li>
+                        </ul>
+                    </div>
+                    <div class="method-box" style="text-align: left; align-items: flex-start;">
+                        <h4 style="color: var(--primary-color);"><i class="fas fa-shield-virus"></i> 2.4 Middleware d'authentification</h4>
+                        <p style="color: var(--text-light); margin-bottom: 0.5rem;">C'est un composant clé au sein de l'architecture.</p>
+                        <ul style="list-style-type: disc; margin-left: 1.5rem; color: var(--text-light); text-align: left;">
+                            <li>Il intercepte toutes les requêtes entrantes.</li>
+                            <li>Il décode et vérifie la validité du JWT.</li>
+                            <li>Il autorise ou bloque l'accès à la logique métier de l'API.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="veille-articles" style="margin-top: 3rem;">
+                    <h4 style="font-size: 1.8rem; margin-bottom: 2rem;">3 & 4. Opérationnel : Décoder & Explorer</h4>
+                    
+                    <div class="article-card" style="flex-direction: column; align-items: flex-start;">
+                        <h5 style="margin-bottom: 1rem; font-size: 1.25rem;"><i class="fas fa-sitemap" style="color: var(--accent-color);"></i> Architecture de l'authentification & Flux</h5>
+                        <div style="font-size: 0.95rem; color: var(--text-light); display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                            <span class="tag">1. Client → login</span> <i class="fas fa-arrow-right"></i>
+                            <span class="tag">2. Serveur → génère JWT</span> <i class="fas fa-arrow-right"></i>
+                            <span class="tag">3. Client → stocke token</span> <i class="fas fa-arrow-right"></i>
+                            <span class="tag">4. Client → envoie token</span> <i class="fas fa-arrow-right"></i>
+                            <span class="tag">5. Middleware → vérifie</span> <i class="fas fa-arrow-right"></i>
+                            <span class="tag">6. Accès autorisé</span>
+                        </div>
+                        <ul style="list-style-type: disc; margin-left: 1.5rem; color: var(--text-light);">
+                            <li><strong>Implémentation API :</strong> <code>/login</code> génère un token, tandis que <code>/profile</code> est protégé par le middleware qui extrait le <code>userId</code> depuis le header.</li>
+                            <li><strong>Gestion des tokens :</strong> Nécessite une expiration (exp), une signature forte, et une vérification systématique.</li>
+                        </ul>
+                    </div>
+
+                    <div class="article-card" style="flex-direction: column; align-items: flex-start;">
+                        <h5 style="margin-bottom: 1rem; font-size: 1.25rem;"><i class="fas fa-check-double" style="color: var(--accent-color);"></i> Bonnes pratiques & Sécurité</h5>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; width: 100%;">
+                            <div>
+                                <h6 style="color: var(--primary-color);">Bonnes Pratiques</h6>
+                                <ul style="list-style-type: disc; margin-left: 1.5rem; color: var(--text-light); font-size: 0.9rem;">
+                                    <li>Utiliser obligatoirement HTTPS.</li>
+                                    <li>Tokens avec durée de vie courte (ex: 15 min).</li>
+                                    <li>Refresh tokens sécurisés et cookies HttpOnly.</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h6 style="color: var(--primary-color);">Gestion des accès & erreurs</h6>
+                                <ul style="list-style-type: disc; margin-left: 1.5rem; color: var(--text-light); font-size: 0.9rem;">
+                                    <li>Séparation : Routes publiques vs protégées.</li>
+                                    <li>Autorisation basée sur le payload (rôle admin/user).</li>
+                                    <li>Filtres stricts : <strong>401</strong> → non authentifié, <strong>403</strong> → refusé.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="veille-articles" style="margin-top: 3rem;">
+                    <h4 style="font-size: 1.8rem; margin-bottom: 2rem;">5. Mission & Projet</h4>
+                    
+                    <div style="background: var(--white); padding: 2rem; border-radius: 8px; box-shadow: var(--shadow-sm); text-align: left;">
+                        <h5 style="color: var(--primary-color); margin-bottom: 1.5rem; font-size: 1.25rem;"><i class="fas fa-layer-group"></i> Architecture Cible</h5>
+                        <table style="width: 100%; border-collapse: collapse; margin-bottom: 2rem;">
+                            <thead>
+                                <tr style="background: var(--bg-light); border-bottom: 2px solid var(--secondary-color);">
+                                    <th style="padding: 1rem; text-align: left;">Composant</th>
+                                    <th style="padding: 1rem; text-align: left;">Rôle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="border-bottom: 1px solid var(--secondary-color);">
+                                    <td style="padding: 1rem;"><strong>API Backend</strong></td><td style="padding: 1rem; color: var(--text-light);">Authentification</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--secondary-color);">
+                                    <td style="padding: 1rem;"><strong>Base de données</strong></td><td style="padding: 1rem; color: var(--text-light);">Stockage users</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--secondary-color);">
+                                    <td style="padding: 1rem;"><strong>JWT</strong></td><td style="padding: 1rem; color: var(--text-light);">Identification</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid var(--secondary-color);">
+                                    <td style="padding: 1rem;"><strong>Middleware</strong></td><td style="padding: 1rem; color: var(--text-light);">Protection routes</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 1rem;"><strong>Refresh Token</strong></td><td style="padding: 1rem; color: var(--text-light);">Renouvellement</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                            <div>
+                                <h5 style="color: var(--primary-color); margin-bottom: 1rem;">Étapes de mise en oeuvre</h5>
+                                <ol style="padding-left: 1.2rem; color: var(--text-light); font-size: 0.95rem;">
+                                    <li style="margin-bottom: 0.5rem;">Implémentation de l’authentification (Création user, Login, Génération JWT).</li>
+                                    <li style="margin-bottom: 0.5rem;">Mise en place du middleware (Vérification, Protection des routes).</li>
+                                    <li style="margin-bottom: 0.5rem;">Gestion des refresh tokens (Endpoint /refresh, Stockage sécurisé).</li>
+                                    <li style="margin-bottom: 0.5rem;">Sécurisation fine (Expiration, HTTPS, Cookies sécurisés).</li>
+                                    <li>Tests et validation (Accès avec et sans token, Expiration).</li>
+                                </ol>
+                            </div>
+                            <div style="background: rgba(49, 130, 206, 0.05); padding: 1.5rem; border-radius: 8px;">
+                                <h5 style="color: var(--primary-color); margin-bottom: 1rem;">✅ Critères de réussite</h5>
+                                <ul style="list-style-type: none; padding-left: 0; color: var(--text-light);">
+                                    <li><i class="fas fa-check" style="color: #38a169;"></i> Login fonctionnel</li>
+                                    <li><i class="fas fa-check" style="color: #38a169;"></i> JWT généré correctement</li>
+                                    <li><i class="fas fa-check" style="color: #38a169;"></i> Routes protégées efficacement</li>
+                                    <li><i class="fas fa-check" style="color: #38a169;"></i> Middleware parfaitement opérationnel</li>
+                                    <li><i class="fas fa-check" style="color: #38a169;"></i> Flux Refresh token fonctionnel</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="veille-methodology" style="margin-top: 3rem; grid-template-columns: 1fr 1fr;">
+                    <div class="method-box" style="text-align: left; align-items: flex-start; justify-content: flex-start;">
+                        <h4 style="color: #38a169; font-size: 1.3rem;"><i class="fas fa-plus-circle"></i> Points Forts (À retenir)</h4>
+                        <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0; color: var(--text-light); text-align: left; line-height: 2;">
+                            <li>■ Stateless &rarr; Hautement Scalable</li>
+                            <li>■ Rapide, léger et décentralisé</li>
+                            <li>■ Devenu le standard moderne (Microservices, SPA)</li>
+                        </ul>
+                    </div>
+                    <div class="method-box" style="text-align: left; align-items: flex-start; justify-content: flex-start;">
+                        <h4 style="color: #e53e3e; font-size: 1.3rem;"><i class="fas fa-exclamation-triangle"></i> Points de Vigilance</h4>
+                        <ul style="list-style-type: none; padding-left: 0; margin-bottom: 0; color: var(--text-light); text-align: left; line-height: 2;">
+                            <li>■ En cas de token volé = Danger immédiat</li>
+                            <li>■ Mauvais stockage (localStorage) = Faille XSS</li>
+                            <li>■ Pas de révocation simple de l'Access Token</li>
+                            <li>■ La gestion correcte des Refresh Tokens est complexe</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center mt-2" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-top: 3rem;">
+                    <a href="https://jwt.io" target="_blank" class="btn btn-secondary"><i class="fas fa-link"></i> Documentation JWT.io</a>
+                    <a href="https://owasp.org" target="_blank" class="btn btn-secondary"><i class="fas fa-shield-alt"></i> Normes OWASP (Sécurité Web)</a>
                 </div>
             </div>
         </div>
@@ -395,28 +715,27 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4>Localisation</h4>
-                            <p>Paris et Île-de-France</p>
+                            <p>Île-de-France</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>prenom.nom@email.com</p>
+                            <p><a href="mailto:tdalilath@gmail.com" style="color: var(--text-light); text-decoration: none;">tdalilath@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-phone-alt"></i>
                         <div>
                             <h4>Téléphone</h4>
-                            <p>06 12 34 56 78</p>
+                            <p>06 52 17 56 29</p>
                         </div>
                     </div>
 
                     <div class="social-links">
+                        <a href="https://github.com/Dalilath" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="Portfolio BTS"><i class="fas fa-link"></i></a>
                     </div>
                 </div>
 
@@ -443,7 +762,7 @@
     <!-- Footer -->
     <footer>
         <div class="container footer-container">
-            <p>&copy; 2024 [Votre Nom]. Portfolio réalisé pour l'épreuve E5 du BTS SIO SLAM.</p>
+            <p>&copy; 2024 Dalilath TAKPA. Portfolio réalisé pour le BTS SIO SLAM.</p>
             <a href="#home" class="scroll-top" aria-label="Remonter en haut">
                 <i class="fas fa-chevron-up"></i>
             </a>
